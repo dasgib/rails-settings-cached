@@ -107,8 +107,6 @@ module RailsSettings
         Rails.application && Rails.application.initialized?
       end
 
-      private
-
       def default_settings(starting_with = nil)
         return {} unless Default.enabled?
         return Default.instance if starting_with.nil?
